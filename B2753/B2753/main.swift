@@ -1,12 +1,11 @@
-//
-//  main.swift
-//  B2753
-//
-//  Created by 안솔기 on 2020/04/03.
-//  Copyright © 2020 SOLGI. All rights reserved.
-//
-
 import Foundation
 
-print("Hello, World!")
+let input = readLine()!
+let year = Int(input)!
+
+if (year%4 == 0) && ((year%100 != 0) || (year%400 == 0)){
+    print("1")
+} else {
+    print("0")
+}
 
